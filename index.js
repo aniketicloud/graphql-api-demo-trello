@@ -15,6 +15,9 @@ const typeDefs = gql`
     day: String
     format: String
     track: String
+      @deprecated(
+        reason: "Too many sessions do not fit into a single track, we will remove it"
+      )
     level: String
   }
 `;
