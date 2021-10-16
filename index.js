@@ -11,13 +11,7 @@ const dataSources = () => {
   };
 };
 
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  dataSources,
-  introspection: false,
-  playground: false,
-});
+const server = new ApolloServer({ typeDefs, resolvers, dataSources });
 
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log(`GrapgQL is running at ${url}`);
