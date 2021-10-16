@@ -15,10 +15,5 @@
     "graphql": "^15.6.1",
     "lodash": "^4.17.21",
     "nodemon": "^2.0.13"
-  },
-  "nodemonConfig": {
-    "env": {
-      "NODE_ENV": "production"
-    }
   }
 }
